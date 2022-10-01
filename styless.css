@@ -1,13 +1,11 @@
 
 body{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
     background: var(--primary-light);
 }
-/* *{
-    border: 1px solid #000f;
-}  */
+*{
+    /* border: 1px solid #000f; */
+    margin: 0px;   
+}  
 :root{
     /* Backgrounds */
     --primary-light: #fef6f9;
@@ -17,19 +15,11 @@ body{
     /* texts */
     --blue:#1f3347;
     --grey: #70717b;
-    --violet: #6347f9
+    --violet: #6347f9;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-section{
-    width: 1360px;
-}
+
 h1{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 900;
 
   }
@@ -39,19 +29,25 @@ h1, h2, h3, h4, a{
 }
 
 h2{
-    font-size: 50px;
+    color: var(--violet);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 55px;
+    margin-bottom: 5%;
     font-weight: 800;
 
 }
-h3{
-    font-size: 40px;
-}
 h4{
     font-size: 30px;
+    margin-bottom: 2%;
 }
-
-p{
+p, a, [type="submit"]{
     font-family: 'Montserrat', sans-serif;
+}
+p{
     font-weight: 600;
     font-size: 22px;
     color: var(--grey);
@@ -61,11 +57,26 @@ p{
 }
 
 a{
-    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 800;
 
+}
+
+header{
+    margin-bottom: 3%;
+}
+main, section{
+    margin-bottom: 10%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 1360px;
 }
 
 .row{
@@ -92,36 +103,133 @@ ul{
 input, button{
     border: none;
 }
+header{
+    display: flex;
+    justify-content: center;
+}
 nav{
-    height: 60px;
+    width: 1360px;
+    height: 100px;
     justify-content: center;
     align-items: center;
-    gap: 100px;
 }
-
+a.logo-travigo{
+    text-indent: -140px;
+    overflow: hidden;
+    width: 140px;
+    height: 70px;
+    background-image: url(./icons/logo-travigo.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+div.login{
+    width: 150px;
+    height: 60px;
+    align-items: center;
+}
+a.about::after{
+    content: " ";
+    display: block;
+    bottom: 2px;
+    width: 26px;
+    height: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#6347f9;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+a.services, a.pricing{
+    padding-right: 18px;
+    background-image: url(./icons/angle-down.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 12px;
+}
 a.sign-up{
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    color: var(--second-white);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
     background: var(--violet);
+    padding: 9% 13%;
 }
 .big-world{
-    width: 550px;
+    width: 30vw;
 }
 form.location{
-    width: 70%;
-    background-color: var(--second-white);
-    /*margin: 0px 5px;
-    */
-    padding: 5%;
-    border-radius: 15%;
-    -webkit-border-radius: 15%;
-    -moz-border-radius: 15%;
-    -ms-border-radius: 15%;
-    -o-border-radius: 15%;
-    box-shadow: 13px 6px 23px -3px rgba(0,0,0,0.39);
--webkit-box-shadow: 13px 6px 23px -3px rgba(0,0,0,0.39);
--moz-box-shadow: 13px 6px 23px -3px rgba(0,0,0,0.39);
+    /*align-items: center;
+    justify-content: center;
+    *//*width: 90%;
+    *//*height: 30px;
+    */padding: 3%;
+    border-radius: 40px;
+    background: var(--second-white);
+    box-shadow: 13px 10px 8px -10px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+form.location input[type="map"],input[type="date"]{
+    padding: 10px;
+
+}
+form.location input[type="submit"]{
+    width: 80px;
+    height: 80px;
+    color: var(--second-white);
+    background: var(--violet);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 13px 10px 8px -10px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+form.location input[type="submit"]{
+    text-indent: -150px;
+    overflow: hidden;
+    background-image: url(./icons/search.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    cursor: pointer;
+}
+
+div.serve{
+    width: 500px;
+}
+div.container-benefits{
+    width: 850px;
+    gap: 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+div.benefits{
+    width: 200px;
+}
+h4.icon-choises{
+    padding-top: 110px;
+    background-image: url(./icons/en-todo-el-mundo.png);
+    background-size: 80px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    /* background-image: url(); */
+}
+h4.icon-tour{
+    padding-top: 110px;
+    background-image: url(./icons/bolsa-de-viaje.png);
+    background-size: 100px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+h4.icon-booking{
+    padding-top: 110px;
+    background-image: url(./icons/ticket.png);
+    background-size: 100px;
+    background-position: top left;
+    background-repeat: no-repeat;
 }
