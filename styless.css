@@ -1,0 +1,127 @@
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: var(--primary-light);
+}
+/* *{
+    border: 1px solid #000f;
+}  */
+:root{
+    /* Backgrounds */
+    --primary-light: #fef6f9;
+    --pink-light: #fff5f5;
+    --second-white: #ffffff; 
+    --yellow-light: #fef3e0;
+    /* texts */
+    --blue:#1f3347;
+    --grey: #70717b;
+    --violet: #6347f9
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 1360px;
+}
+h1{
+    font-size: 80px;
+    font-weight: 900;
+
+  }
+h1, h2, h3, h4, a{
+    font-family: 'lato', sans-serif;
+    color: var(--blue);
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 800;
+
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--grey);
+    letter-spacing: 0.8px; 
+    word-spacing: 2px;
+    line-height: 22px;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+input, button{
+    border: none;
+}
+nav{
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+a.sign-up{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: var(--violet);
+}
+.big-world{
+    width: 550px;
+}
+form.location{
+    width: 70%;
+    background-color: var(--second-white);
+    /*margin: 0px 5px;
+    */
+    padding: 5%;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    box-shadow: 13px 6px 23px -3px rgba(0,0,0,0.39);
+-webkit-box-shadow: 13px 6px 23px -3px rgba(0,0,0,0.39);
+-moz-box-shadow: 13px 6px 23px -3px rgba(0,0,0,0.39);
+}
