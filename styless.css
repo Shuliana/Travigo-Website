@@ -13,7 +13,7 @@ body{
 :root{
     /* Backgrounds */
     --primary-light: #fef6f9;
-    --pink-light: #fff5f5;
+    --pink-light: #fcecec;
     --second-white: #ffffff; 
     --yellow-light: #fef3e0;
     /* texts */
@@ -30,7 +30,7 @@ h1{
 button, .container-benefits-3 span.price{
     font-family: 'Noto Sans', sans-serif;
 }
-h1, h2, h3, h4, a, span.experience{
+h1, h2, h3, h4, h5, a, span.experience{
     font-family: 'lato', sans-serif;
     color: var(--blue);
     text-shadow: 2px 1px 3px #bababa;
@@ -51,6 +51,12 @@ h3{
 }
 h4{
     font-size: 30px;
+    margin-bottom: 2%;
+    font-weight: 800;
+
+}
+h5{
+    font-size: 22px;
     margin-bottom: 2%;
     font-weight: 800;
 
@@ -86,7 +92,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-section{
+section, footer{
     width: 1360px;
 }
 
@@ -161,7 +167,7 @@ a.services, a.pricing{
     background-position: right center;
     background-size: 12px;
 }
-a.sign-up{
+a.sign-up, button.started{
     color: var(--second-white);
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -169,6 +175,8 @@ a.sign-up{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     background: var(--violet);
+}
+a.sign-up{
     padding: 9% 13%;
 }
 .big-world{
@@ -415,4 +423,35 @@ div.emojis button.emojis{
     font-size: 50px;
     color: var(--violet);
     font-weight: 900;
+}
+
+
+section.beauty-world{
+    background-color: var(--pink-light);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+div.beauty-world{
+    width: 80%;
+    gap: 80px;
+    padding: 130px 0px;
+    align-items: center;
+    text-align: center;
+}
+button.started{
+    font-size: 22px;
+    font-weight: 300;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 13px 10px 8px -10px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+
+footer .social-media, footer .get-touch{
+    width: 200px;
 }
