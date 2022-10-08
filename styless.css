@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 body{
     background: var(--primary-light);
-    
+    font-family: 'Noto Sans', sans-serif;
 }
 *{
     /* border: 1px solid #000f; */
@@ -55,7 +55,7 @@ h4{
     font-weight: 800;
 
 }
-p, a, [type="submit"]{
+p, a, [type="submit"], span.verified{
     font-family: 'Montserrat', sans-serif;
 }
 p, span{
@@ -324,11 +324,12 @@ div.calific{
     position: absolute;
 }
 
-.container-experience{
+div.container-experience{
     position: relative;
     bottom: -500px;
     right: -200px;
-    padding: 20px;
+    padding: 30px;
+    gap: 20px;
     background-color: var(--second-white);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -336,6 +337,40 @@ div.calific{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     box-shadow: 13px 10px 8px -10px rgba(170, 170, 170, 0.1),0px 10px 15px -3px rgba(96, 95, 95, 0.1);
+}
+div.verified{
+    background-color: var(--second-white);
+    width: 140px;
+    gap: 15px;
+    /* height: 250px; */
+    padding: 20px;
+    position: relative;
+    bottom: -100px;
+    right: 60px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 13px 10px 8px -10px rgba(170, 170, 170, 0.1),0px 10px 15px -3px rgba(96, 95, 95, 0.1);
+
+}
+
+span.icon-verified{
+    font-size: 35px;
+    color: var(--blue);
+    font-weight: 700;
+    text-align: center;
+    padding-top: 120px;
+    background-image: url(./icons/verificado\ copia.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 90px;
+}
+span.verified{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
 }
 
 
@@ -353,15 +388,15 @@ span.experience{
 /* div.emojis{
     width: 300px;
 } */
-span.icon-verified{
+/* span.icon-verified{
     padding-top: 100px;
     background-image: url(./img/verificacion-medalla.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 150px;
-}
+} */
 div.emojis button.emojis{
-    font-size: 30px;
+    font-size: 36px;
     background: var(--primary-light);
     width: 30px;
     cursor: pointer;
