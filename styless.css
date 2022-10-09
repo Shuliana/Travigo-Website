@@ -64,7 +64,7 @@ h5{
 p, a, [type="submit"], span.verified{
     font-family: 'Montserrat', sans-serif;
 }
-p, span{
+p, span, footer a{
     font-weight: 600;
     font-size: 22px;
     color: var(--grey);
@@ -167,17 +167,18 @@ a.services, a.pricing{
     background-position: right center;
     background-size: 12px;
 }
-a.sign-up, button.started{
+a.sign-up{
     color: var(--second-white);
+    background: var(--violet);
+}
+a.sign-up{
+    padding: 9% 13%;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    background: var(--violet);
-}
-a.sign-up{
-    padding: 9% 13%;
+    
 }
 .big-world{
     width: 30vw;
@@ -437,11 +438,14 @@ section.beauty-world{
     align-items: center;
 }
 div.beauty-world{
-    width: 80%;
-    gap: 80px;
-    padding: 130px 0px;
     align-items: center;
     text-align: center;
+    width: 80%;
+    gap: 60px;
+    padding: 130px 0px;
+}
+div.beauty-world h3{
+    margin: 0px;
 }
 button.started{
     font-size: 22px;
@@ -451,7 +455,38 @@ button.started{
     box-shadow: 13px 10px 8px -10px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 
 }
-
+/* footer div{
+    gap: 20px;
+} */
 footer .social-media, footer .get-touch{
     width: 200px;
+}
+footer h5{
+    text-shadow: none;
+    font-size: 22px;
+}
+footer div a, footer p{
+    font-size: 16px;
+    text-shadow: none;
+}
+footer div.icons-social-media{
+    justify-content: space-evenly;
+}
+footer div.icons-social-media a{
+    width: 30px;
+    height: 30px;
+    text-indent: 30px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+a.icon-instagram{
+ background-image:  url(./icons/instagram.svg);
+}
+a.icon-facebook{
+    background-image: url(./icons/facebook.svg);
+}
+a.icon-Twiter{
+    background-image: url(./icons/twitter.svg);
 }
