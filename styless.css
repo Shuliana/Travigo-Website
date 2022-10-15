@@ -490,3 +490,80 @@ a.icon-facebook{
 a.icon-Twiter{
     background-image: url(./icons/twitter.svg);
 }
+
+
+form.e-mail input[type="e-mail"]{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------- animaciones------------------------ */
+@keyframes translateY{
+    0%{
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+       -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+    }
+}
+
+.translateY:hover{
+    animation: translateY 3s infinite;
+    -webkit-animation: translateY 3s infinite;
+}
+
+
+
+/*-------------- Transicion en Botones-------------- */
+
+@keyframes translateY-button{
+    0%{
+       transform: translateY(0);
+       -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+       -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+    }
+    50%{
+        transform: translateY(1px);
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        -o-transform: translateY(1px);
+}
+    100%{
+        transform: translateY(1px);
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        -o-transform: translateY(1px);
+}
+}
+
+.translateY-button:hover{
+    animation: translateY 3s infinite;
+    -webkit-animation: translateY 3s infinite;
+    box-shadow: 8px 6px 4px -6px rgba(0,0,0,0.1),0px 6px 9px -3px rgba(0,0,0,0.1);
+}
